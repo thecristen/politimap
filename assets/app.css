@@ -1,0 +1,75 @@
+html {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body {
+	background: url(black_lozenge.png);
+  font-family: 'Martel Sans', 'Franklin Gothic Book', 'Helvetica', Arial, sans-serif;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+#map {
+  height: 500px; 
+  width: 100%;
+  -moz-border-radius: 0 0 350px 0;
+  -webkit-border-radius: 0 0 350px 200px;
+  border-radius: 0 0 350px 0; 
+  z-index: 0
+}
+
+h1, h2, h3, h4, h5, h6, p.heading {
+  font-family: 'Martel', Georgia, serif;
+}
+
+nav {
+  color: white;
+  width: 40%;
+  float: left;
+}
+
+main {
+  width: 50%;
+  float: right;
+  padding: 0 2rem;
+}
+
+main {
+  color: white;
+}
+
+main ul {
+  background-color: white;
+  padding: 0;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+main ul li {
+  font-size: 0.8rem;
+  list-style-type: none;
+  line-height: 2rem;
+  height: 2rem;
+  box-shadow: 0 1px 1px 0 #C7C7C7 inset;
+  padding: 0 1rem;
+  color: black;
+}
+
+main ul li:first-child {
+  font-family: 'Martel';
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: none;
+  height: 2.5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  
+}
+
+aside {
+  color: pink;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
