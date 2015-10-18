@@ -4,18 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "beefy index.js:bundle.js --live",
+    "bundle": "browserify index.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.4.0",
     "leaflet": "^0.7.5",
+    "leaflet-ajax": "^2.0.0",
     "leaflet-omnivore": "^0.3.2",
     "leaflet-pip": "^0.1.1",
     "leaflet-providers": "^1.1.4",
     "leaflet.locatecontrol": "^0.45.0",
     "mapbox": "^0.8.2",
-    "normalize.css": "^3.0.3"
+    "node-underscorify": "0.0.14",
+    "normalize.css": "^3.0.3",
+    "hbsfy": "^3.0.3",
+    "handlebars": "^3.0.3"
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
   }
 }
